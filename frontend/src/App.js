@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import CardHero from "./components/CardHero";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <NavBar></NavBar>
+      <img src="./img/Hero-ugb.png" className="HeroBackground" />
+      <div className="HeroHeadlineWrapper">
+        <h1 className="Headline">
+          O marketplace de alunos <br />
+          para alunos.
+        </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Venda, troque e realize empréstimos de materias com o <br />
+          poder de um clique.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="SliderPassWrapper">
+        <div className="SliderPass">
+          <img src="./img/ChevronLeft.png"></img>
+        </div>
+        <div className="SliderPass">
+          <img src="./img/ChevronRight.png"></img>
+        </div>
+      </div>
+      <div className="SlideIndexWrapper">
+        <div className="SliderIndex active"></div>
+        <div className="SliderIndex"></div>
+        <div className="SliderIndex"></div>
+        <div className="SliderIndex"></div>
+        <div className="SliderIndex"></div>
+      </div>
+      <section className="HeroBody">
+        <div className="HeroCardWrapper"></div>
+      </section>
     </div>
   );
 }

@@ -1,0 +1,101 @@
+.Background {
+  background: white;
+}
+
+.NavBar {
+  top: 20px;
+  position: sticky;
+  min-width: 100%;
+  min-height: 160px;
+}
+
+.logo {
+  object-fit: cover;
+  width: 124px;
+  height: 92px;
+}
+
+.UpperNavBar-wrapper {
+  padding: 0 60px;
+  gap: 464px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SearchBox-wrapper {
+  border-radius: 12px;
+  padding: 0 0 0 16px;
+  min-width: 727px;
+  min-height: 40px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.SearchIcon {
+  opacity: 70%;
+  width: 20px;
+  height: 20px;
+}
+
+.SearchBox {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.SearchBox::placeholder {
+  opacity: 70%;
+}
+
+.LowerNavBar-wrapper {
+  padding: 20px 30px 30px 556px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+
+.Navigation a {
+  text-decoration: none;
+  color: #050315;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.Navigation a:hover {
+  color: grey;
+}
+
+.ButtonsWrapper {
+  padding-left: 256px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.ButtonsWrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #050315;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.ButtonsWrapper button:hover {
+  color: grey;
+}
