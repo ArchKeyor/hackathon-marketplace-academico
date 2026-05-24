@@ -1,0 +1,31 @@
+.FeaturedProducts {
+  width: 1600px;
+  margin-top: 120px;
+  padding: 32px 42px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.FeaturedHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.FeaturedHeader h2 {
+  font-size: 32px;
+  color: #111;
+}
+
+.FeaturedHeader a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ProductsGrid {
+  display: flex;
+  gap: 164px;
+}

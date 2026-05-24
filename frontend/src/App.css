@@ -100,3 +100,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.ProductCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -2,11 +2,12 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import CardHero from "./components/CardHero";
 import CategoryCard from "./components/CategoryCard";
+import FeaturedProducts from "./components/FeaturedProducts";
 
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar />
       <img src="./img/Hero-ugb.png" className="HeroBackground" />
       <div className="HeroHeadlineWrapper">
         <h1 className="Headline">
@@ -59,6 +60,9 @@ function App() {
         </div>
         <div className="CategoryCardWrapper">
           <CategoryCard />
+        </div>
+        <div className="ProductCardWrapper">
+          <FeaturedProducts />
         </div>
       </section>
     </div>
