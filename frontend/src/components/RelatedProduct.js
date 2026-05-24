@@ -1,40 +1,9 @@
 import "../styles/FeaturedProducts.css";
 import RelatedProductsCard from "../components/RelatedProductsCard";
+import products from "../data/products";
 
 export default function RelatedProduct() {
-  const products = [
-    {
-      image: "./img/Sandwich.png",
-      title: "Sanduíche natural com ingredientes frescos por unidade",
-      author: "João Paulo | 5 Período Administração",
-      price: "R$ 12,90",
-      category: "Snacks",
-    },
-
-    {
-      image: "./img/Cake.png",
-      title: "Bolo de pote 250ml vários sabores ",
-      author: "Bruna Azevedo | 7 Período Biomedicina",
-      price: "R$ 15,90",
-      category: "Snacks",
-    },
-
-    {
-      image: "./img/Brigadeiro.png",
-      title: "Brigadeiro por unidades",
-      author: "Kauê Loreno | 5 Período Eng. Software",
-      price: "R$ 5,99",
-      category: "Snacks",
-    },
-
-    {
-      image: "./img/PalhaItaliana.png",
-      title: "Bicicleta Aro 29 Gts Dexter 24 Marchas",
-      author: "João Marcos | 5 Período Eng. Software",
-      price: "R$ 6,67",
-      category: "Snacks",
-    },
-  ];
+  const relatedProducts = products.filter((product) => product.related);
 
   return (
     <div className="FeaturedProducts">
@@ -43,9 +12,10 @@ export default function RelatedProduct() {
       </div>
 
       <div className="ProductsGrid">
-        {products.map((product, index) => (
+        {relatedProducts.map((product) => (
           <RelatedProductsCard
-            key={index}
+            key={product.id}
+            id={product.id}
             image={product.image}
             title={product.title}
             author={product.author}

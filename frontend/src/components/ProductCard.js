@@ -1,8 +1,19 @@
 import "../styles/ProductCard.css";
 
-export default function ProductCard({ image, title, author, price, category }) {
+import { useNavigate } from "react-router-dom";
+
+export default function ProductCard({
+  id,
+  image,
+  title,
+  author,
+  price,
+  category,
+}) {
+  const navigate = useNavigate();
+
   return (
-    <div className="ProductCard">
+    <div className="ProductCard" onClick={() => navigate(`/produto/${id}`)}>
       <img src={image} alt={title} className="ProductImage" />
 
       <h3 className="ProductTitle">{title}</h3>

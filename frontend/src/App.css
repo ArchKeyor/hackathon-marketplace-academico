@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family:
     system-ui,
@@ -13,7 +19,6 @@ body {
     sans-serif;
   background: #f4f4f8;
   overflow-x: hidden;
-  min-height: 3460px;
 }
 
 .HeroBackground {
