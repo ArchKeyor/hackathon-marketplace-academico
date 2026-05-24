@@ -12,6 +12,8 @@ body {
     "Helvetica Neue",
     sans-serif;
   background: #f4f4f8;
+  overflow-x: hidden;
+  min-height: 2899px;
 }
 
 .HeroBackground {
@@ -91,4 +93,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 64px;
+}
+
+.CategoryCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

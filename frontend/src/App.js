@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import CardHero from "./components/CardHero";
+import CategoryCard from "./components/CategoryCard";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
             buttonText="Começar a trocar"
             onClick={() => {}}
           />
+        </div>
+        <div className="CategoryCardWrapper">
+          <CategoryCard />
         </div>
       </section>
     </div>

@@ -1,0 +1,58 @@
+.CardCategory {
+  margin-top: 156px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px 46px;
+  background: white;
+  width: 1600px;
+}
+
+.CategoryTitle {
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 42px;
+}
+
+.CategoryWrapper {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.CategoryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.CategoryBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #736ded;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.CategoryBG:hover {
+  transform: translateY(-4px);
+}
+
+.CategoryIcon {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.CategoryName {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  cursor: pointer;
+}
