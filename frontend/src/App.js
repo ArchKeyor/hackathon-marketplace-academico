@@ -33,7 +33,29 @@ function App() {
         <div className="SliderIndex"></div>
       </div>
       <section className="HeroBody">
-        <div className="HeroCardWrapper"></div>
+        <div className="HeroCardWrapper">
+          <CardHero
+            title="Transações confiáveis"
+            image="./img/Shield.png"
+            description="Nosso sistema de reputação avalia tanto vendedor como cliente."
+            buttonText="Começar a comprar"
+            onClick={() => {}}
+          />
+          <CardHero
+            title="Venda dentro do campus"
+            image="./img/Target.png"
+            description="Alcance todo o campus e venda seus produtos de forma prática."
+            buttonText="Começar a vender"
+            onClick={() => {}}
+          />
+          <CardHero
+            title="Troque produtos"
+            image="./img/Present.png"
+            description="Alcance todo o campus e venda seus produtos de forma prática."
+            buttonText="Começar a trocar"
+            onClick={() => {}}
+          />
+        </div>
       </section>
     </div>
   );
