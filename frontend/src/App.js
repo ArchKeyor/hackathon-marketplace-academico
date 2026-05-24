@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar";
 import CardHero from "./components/CardHero";
 import CategoryCard from "./components/CategoryCard";
 import FeaturedProducts from "./components/FeaturedProducts";
+import RelatedProduct from "./components/RelatedProduct";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -63,8 +65,12 @@ function App() {
         </div>
         <div className="ProductCardWrapper">
           <FeaturedProducts />
+          <RelatedProduct />
         </div>
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

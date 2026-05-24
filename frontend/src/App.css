@@ -13,7 +13,7 @@ body {
     sans-serif;
   background: #f4f4f8;
   overflow-x: hidden;
-  min-height: 2899px;
+  min-height: 3460px;
 }
 
 .HeroBackground {
@@ -103,6 +103,7 @@ body {
 
 .ProductCardWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
