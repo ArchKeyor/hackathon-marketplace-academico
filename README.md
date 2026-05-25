@@ -46,7 +46,7 @@ Recomendações;
 Sistema de denúncias;
 Mentorias entre alunos;
 
-⚙️ Como Executar o Projeto
+⚙️ Como Executar o Projeto com o Docker
 
 Antes de começar, certifique-se de ter instalado o Docker Desktop e o Git em sua máquina. Abra o Docker Desktop e deixe-o rodando em segundo plano. Depois disso, clone o repositório com o comando:
 
@@ -86,5 +86,62 @@ Caso seja necessário reconstruir os containers:
 ```bash
 docker compose up --build
 ```
-````
+
+------------------------------------------------------
+
+⚙️ Como Executar o Projeto sem o Docker
+
+Antes de começar, certifique-se de ter instalado:
+
+- Node.js
+- Python
+- PostgreSQL
+- Git
+
+Primeiro, clone o repositório:
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd nome-do-projeto
+```
+
+Instale as dependências do front-end:
+
+```bash
+npm install
+```
+
+Instale as dependências do back-end:
+
+```bash
+pip install -r requirements.txt
+```
+
+Configure as variáveis de ambiente do projeto criando o arquivo `.env`.
+
+Depois disso, execute o front-end:
+
+```bash
+npm run dev
+```
+
+E execute o back-end:
+
+```bash
+python manage.py runserver
+```
+
+Após iniciar os serviços, a aplicação estará disponível localmente.
+
+Exemplo:
+
+```txt
+Frontend: http://localhost:3000
+Backend: http://localhost:8000
+```
 
