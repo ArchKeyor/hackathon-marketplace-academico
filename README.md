@@ -46,6 +46,45 @@ Recomendações;
 Sistema de denúncias;
 Mentorias entre alunos;
 
+⚙️ Como Executar o Projeto
 
+Antes de começar, certifique-se de ter instalado o Docker Desktop e o Git em sua máquina. Abra o Docker Desktop e deixe-o rodando em segundo plano. Depois disso, clone o repositório com o comando:
 
-Interface responsiva.
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd nome-do-projeto
+```
+
+Agora execute os containers utilizando o Git Bash, terminal Linux ou terminal integrado do VSCode:
+
+```bash
+docker compose up
+```
+
+Após a inicialização dos containers, a aplicação estará disponível localmente.
+
+Exemplo:
+
+```txt
+Frontend: http://localhost:3000
+Backend: http://localhost:8000
+```
+
+Para encerrar a aplicação utilize:
+
+```bash
+docker compose down
+```
+
+Caso seja necessário reconstruir os containers:
+
+```bash
+docker compose up --build
+```
+````
+
