@@ -1,6 +1,18 @@
+:root {
+  --color-bg: #07091a;
+  --color-surface: #0d1230;
+  --color-surface2: #0f1538;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c5cbf;
+  --color-accent-h: #6a4aad;
+  --color-text: #e8eaf6;
+  --color-muted: rgba(255, 255, 255, 0.55);
+  --grad: linear-gradient(135deg, #4ecfef, #9b59d4, #e8468a);
+}
+
 .ProductDetailsPage {
   min-height: 100vh;
-  background: #f5f5f7;
+  background: var(--color-bg);
 }
 
 .ProductDetailsContainer {
@@ -12,16 +24,23 @@
 }
 
 .Breadcrumb p {
-  color: #666;
+  color: var(--color-muted);
   font-size: 15px;
   cursor: pointer;
 }
 
 .ProductDetailsCard {
-  background: white;
+  background: var(--color-surface);
   border-radius: 18px;
   padding: 42px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(180, 140, 255, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 0 18px rgba(120, 80, 255, 0.12),
+    0 0 42px rgba(88, 42, 160, 0.18),
+    0 12px 40px rgba(0, 0, 0, 0.45);
+
+  transition: all 0.3s ease;
 }
 
 .ProductTopSection {
@@ -53,20 +72,21 @@
 }
 
 .ProductLink {
-  color: #5f58e8;
+  color: var(--color-accent);
   font-size: 15px;
   cursor: pointer;
 }
 
 .ProductSales {
-  color: #666;
+  color: var(--color-muted);
   font-size: 15px;
 }
 
 .FeaturedBadge {
   width: fit-content;
-  background: #dcd7ff;
-  color: #4f46e5;
+  background: none;
+  border: 1px solid var(--color-accent-h);
+  color: var(--color-accent-h);
   padding: 10px 18px;
   border-radius: 10px;
   font-size: 14px;
@@ -76,23 +96,23 @@
 .ProductTitlePage {
   font-size: 48px;
   line-height: 1.2;
-  color: #111;
+  color: var(--color-text);
 }
 
 .ProductDescriptionPage {
   font-size: 18px;
-  color: #555;
+  color: var(--color-muted);
   line-height: 1.7;
 }
 
 .ProductAuthorPage {
   font-size: 16px;
-  color: #666;
+  color: var(--color-muted);
 }
 
 .ProductPricePage {
   font-size: 56px;
-  color: #111;
+  color: var(--color-text);
   margin-top: 12px;
 }
 
@@ -103,8 +123,8 @@
   height: 68px;
   border: none;
   border-radius: 14px;
-  background: #5f58e8;
-  color: white;
+  background: var(--grad);
+  color: var(--color-text);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -116,10 +136,15 @@
   transform: translateY(-2px);
 }
 
+.BuyButton:active {
+  transform: translateY(-4px);
+}
+
 .ProductDivider {
   width: 100%;
   height: 1px;
-  background: #ececec;
+  opacity: 0.2;
+  background: var(--color-muted);
   margin: 56px 0;
 }
 
@@ -133,6 +158,10 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+
+.ReviewText {
+  color: var(--color-text);
 }
 
 .ReviewSummary h2 {
@@ -149,23 +178,23 @@
 .RatingBig span {
   font-size: 72px;
   font-weight: 700;
-  color: #5f58e8;
+  color: var(--color-accent);
 }
 
 .RatingBig p {
   font-size: 24px;
-  color: #5f58e8;
+  color: var(--color-accent);
 }
 
 .RatingBig small {
-  color: #666;
+  color: var(--color-muted);
 }
 
 .SellerBadge {
   display: flex;
   align-items: center;
   gap: 16px;
-  background: #f5f5ff;
+  background: transparent;
   padding: 18px;
   border-radius: 14px;
 }
@@ -179,7 +208,11 @@
 }
 
 .SellerBadge p {
-  color: #666;
+  color: var(--color-muted);
+}
+
+.Stars {
+  color: var(--color-accent);
 }
 
 .ReviewList {
@@ -189,16 +222,20 @@
   gap: 24px;
 }
 
+.ReviewSummary {
+  color: var(--color-text);
+}
+
 .ReviewList h2 {
   font-size: 32px;
 }
 
 .ReviewCount {
-  color: #666;
+  color: var(--color-muted);
 }
 
 .ReviewCard {
-  border: 1px solid #ececec;
+  background: none;
   border-radius: 16px;
   padding: 24px;
 }
@@ -222,7 +259,7 @@
 }
 
 .ReviewerHeader p {
-  color: #666;
+  color: var(--color-muted);
   font-size: 14px;
 }
 
@@ -232,7 +269,7 @@
 }
 
 .ReviewText {
-  color: #444;
+  color: var(--color-muted);
   line-height: 1.7;
 }
 
@@ -240,10 +277,18 @@
   margin-top: 12px;
   width: fit-content;
   border: none;
-  background: #ecebff;
-  color: #4f46e5;
+  background: none;
+  color: var(--color-accent);
   padding: 16px 28px;
   border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.ReviewCard h3 {
+  color: var(--color-text);
+}
+
+.ReviewList h2 {
+  color: var(--color-text);
 }

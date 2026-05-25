@@ -1,10 +1,29 @@
+:root {
+  --color-bg: #07091a;
+  --color-surface: #0d1230;
+  --color-surface2: #0f1538;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c5cbf;
+  --color-accent-h: #6a4aad;
+  --color-text: #e8eaf6;
+  --color-muted: rgba(255, 255, 255, 0.55);
+  --grad: linear-gradient(135deg, #4ecfef, #9b59d4, #e8468a);
+}
+
 .FeaturedProducts {
   width: 1600px;
   margin-top: 120px;
   padding: 32px 42px;
-  background: white;
+  background: var(--color-surface);
   border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(180, 140, 255, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 0 18px rgba(120, 80, 255, 0.12),
+    0 0 42px rgba(88, 42, 160, 0.18),
+    0 12px 40px rgba(0, 0, 0, 0.45);
+
+  transition: all 0.3s ease;
 }
 
 .FeaturedHeader {
@@ -16,16 +35,16 @@
 
 .FeaturedHeader h2 {
   font-size: 32px;
-  color: #111;
+  color: var(--color-text);
 }
 
 .FeaturedHeader a {
-  color: #6c63ff;
+  color: var(--color-accent);
   text-decoration: none;
   font-size: 14px;
 }
 
 .ProductsGrid {
   display: flex;
-  gap: 164px;
+  gap: 26px;
 }

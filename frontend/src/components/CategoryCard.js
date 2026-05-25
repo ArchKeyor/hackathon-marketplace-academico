@@ -4,23 +4,23 @@ export default function CategoryCard() {
   const categories = [
     {
       name: "Serviços",
-      image: "./img/CardBoard.png",
+      image: "/img/ServicesGradient.png",
     },
     {
       name: "Snacks",
-      image: "./img/Food.png",
+      image: "/img/FoodGradient.png",
     },
     {
       name: "Usados",
-      image: "./img/Users.png",
+      image: "/img/UserGradient.png",
     },
     {
       name: "Trocas",
-      image: "./img/Trade.png",
+      image: "/img/HandGradient.png",
     },
     {
       name: "Urgência",
-      image: "./img/Urgency.png",
+      image: "./img/UrgencyGradient.png",
     },
   ];
 

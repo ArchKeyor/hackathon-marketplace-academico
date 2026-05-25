@@ -6,11 +6,7 @@ export default function Footer() {
       <div className="FooterContent">
         {/* LEFT SIDE */}
         <div className="FooterBrand">
-          <img
-            src="./img/LogoUgbMarket.png"
-            alt="UGB Market"
-            className="FooterLogo"
-          />
+          <img src="/img/Logo.png" alt="UGB Market" className="FooterLogo" />
 
           <p className="FooterDescription">
             Usando a tecnologia para promover um ambiente acadêmico melhor.

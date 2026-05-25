@@ -7,11 +7,11 @@ export default function NavBar() {
       <header className="Navbar">
         <div className="UpperNavBar-wrapper">
           <Link to="/">
-            <img src="/img/LogoUgbMarket.png" className="logo" alt=""></img>
+            <img src="/img/Logo.png" className="logo" alt=""></img>
           </Link>
           <div className="SearchBox-wrapper">
             <img
-              src="/img/Search-icon.svg"
+              src="/img/SearchGradient.png"
               className="SearchIcon"
               alt="Pesquisar"
             />
@@ -28,15 +28,15 @@ export default function NavBar() {
             <a href="#">Empréstimos</a>
             <a href="#">Vender</a>
             <a href="#">Trocas</a>
-            <a href="#">Produtos</a>
+            <Link to="/catalog">Catálogo</Link>
           </nav>
           <div className="ButtonsWrapper">
             <button>
-              <img src="/img/Person-icon.png" /> Login
+              <img src="/img/UserGradient.png" /> Login
             </button>
             <img src="/img/Separator.png" />
             <button>
-              <img src="/img/Kart-icon.png"></img>
+              <img src="/img/CartGradient.png"></img>
             </button>
           </div>
         </div>

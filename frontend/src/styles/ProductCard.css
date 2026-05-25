@@ -1,5 +1,22 @@
+:root {
+  --color-bg: #07091a;
+  --color-surface: #0d1230;
+  --color-surface2: #0f1538;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c5cbf;
+  --color-accent-h: #6a4aad;
+  --color-text: #e8eaf6;
+  --color-muted: rgba(255, 255, 255, 0.55);
+  --grad: linear-gradient(135deg, #4ecfef, #9b59d4, #e8468a);
+}
+
 .ProductCard {
-  width: 260px;
+  border-radius: 18px;
+  background: var(--color-surface2);
+  border-radius: var(--color-border);
+  width: 420px;
+  height: 460px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -20,22 +37,22 @@
 .ProductTitle {
   font-size: 18px;
   font-weight: 400;
-  color: #222;
+  color: var(--color-text);
   line-height: 1.4;
 }
 
 .ProductAuthor {
   font-size: 14px;
-  color: #666;
+  color: var(--color-muted);
 }
 
 .ProductPrice {
   font-size: 36px;
   font-weight: 500;
-  color: #111;
+  color: var(--color-text);
 }
 
 .ProductCategory {
   font-size: 14px;
-  color: #6c63ff;
+  color: var(--color-accent-h);
 }

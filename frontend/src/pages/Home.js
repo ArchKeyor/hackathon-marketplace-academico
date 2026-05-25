@@ -11,12 +11,15 @@ export default function Home() {
     <div className="App">
       <NavBar />
 
-      <img src="./img/Hero-ugb.png" className="HeroBackground" alt="" />
+      <img src="/img/HeroPlaceholder.jpg" className="HeroBackground" alt="" />
 
       <div className="HeroHeadlineWrapper">
         <h1 className="Headline">
-          O marketplace de alunos <br />
-          para alunos.
+          O marketplace{" "}
+          <span>
+            de alunos <br />
+            para alunos.
+          </span>
         </h1>
 
         <p>
@@ -47,7 +50,7 @@ export default function Home() {
         <div className="HeroCardWrapper">
           <CardHero
             title="Transações confiáveis"
-            image="./img/Shield.png"
+            image="/img/ShieldGradient.png"
             description="Nosso sistema de reputação avalia tanto vendedor como cliente."
             buttonText="Começar a comprar"
             onClick={() => {}}
@@ -55,7 +58,7 @@ export default function Home() {
 
           <CardHero
             title="Venda dentro do campus"
-            image="./img/Target.png"
+            image="/img/TargetGradient.png"
             description="Alcance todo o campus e venda seus produtos de forma prática."
             buttonText="Começar a vender"
             onClick={() => {}}
@@ -63,7 +66,7 @@ export default function Home() {
 
           <CardHero
             title="Troque produtos"
-            image="./img/Present.png"
+            image="/img/LocationGradient.png"
             description="Alcance todo o campus e venda seus produtos de forma prática."
             buttonText="Começar a trocar"
             onClick={() => {}}

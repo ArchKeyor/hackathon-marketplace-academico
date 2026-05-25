@@ -1,7 +1,19 @@
+:root {
+  --color-bg: #07091a;
+  --color-surface: #0d1230;
+  --color-surface2: #0f1538;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c5cbf;
+  --color-accent-h: #6a4aad;
+  --color-text: #e8eaf6;
+  --color-muted: rgba(255, 255, 255, 0.55);
+  --grad: linear-gradient(135deg, #4ecfef, #9b59d4, #e8468a);
+}
+
 .Footer {
   margin-top: 120px;
   background: linear-gradient(90deg, #0f1025 0%, #11112b 100%);
-  color: white;
+  color: var(--color-text);
 }
 
 .FooterContent {
@@ -22,7 +34,7 @@
 }
 
 .FooterLogo {
-  width: 180px;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -55,7 +67,7 @@
 }
 
 .FooterColumn a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   font-size: 18px;
   opacity: 0.8;

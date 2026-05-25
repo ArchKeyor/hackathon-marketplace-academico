@@ -7,25 +7,20 @@ const products = [
     price: "R$ 7,99",
     category: "Snacks",
     description: "Brownie extremamente recheado e feito artesanalmente.",
-
     featured: true,
     related: false,
   },
-
   {
     id: 2,
     image: "/img/Book.png",
     title: "Livro Lógica de programação e algoritmos com Javascript",
-
     author: "Pedro Dias | 5 Período Eng. Software",
     price: "R$ 39,90",
     category: "Ciência",
     description: "Livro ideal para iniciantes em programação.",
-
     featured: true,
     related: false,
   },
-
   {
     id: 3,
     image: "/img/Kaue.png",
@@ -34,11 +29,9 @@ const products = [
     price: "R$ 29,99/hora",
     category: "Mentoria",
     description: "Mentorias particulares para algoritmos e lógica.",
-
     featured: true,
     related: false,
   },
-
   {
     id: 4,
     image: "/img/Bike.png",
@@ -47,26 +40,20 @@ const products = [
     price: "R$ 599,99",
     category: "Usados",
     description: "Bike seminova em excelente estado.",
-
     featured: true,
-
     related: false,
   },
-
   {
     id: 5,
     image: "/img/Sandwich.png",
     title: "Sanduíche natural com ingredientes frescos por unidade",
-
     author: "João Paulo | 5 Período Administração",
     price: "R$ 12,90",
     category: "Snacks",
     description: "Sanduíche natural artesanal feito diariamente.",
-
     featured: false,
     related: true,
   },
-
   {
     id: 6,
     image: "/img/Cake.png",
@@ -75,11 +62,9 @@ const products = [
     price: "R$ 15,90",
     category: "Snacks",
     description: "Bolos de pote com sabores variados.",
-
     featured: false,
     related: true,
   },
-
   {
     id: 7,
     image: "/img/Brigadeiro.png",
@@ -88,11 +73,9 @@ const products = [
     price: "R$ 5,99",
     category: "Snacks",
     description: "Brigadeiros gourmet vendidos por unidade.",
-
     featured: false,
     related: true,
   },
-
   {
     id: 8,
     image: "/img/PalhaItaliana.png",
@@ -101,9 +84,206 @@ const products = [
     price: "R$ 6,67",
     category: "Snacks",
     description: "Palha italiana artesanal extremamente cremosa.",
-
     featured: false,
     related: true,
+  },
+
+  {
+    id: 9,
+    image:
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80",
+    title: "Formatação ABNT para artigos e TCCs",
+    author: "Lucas Andrade | 3 Período Eng. Software",
+    price: "R$ 35,00",
+    category: "Serviços",
+    description: "Formatação profissional seguindo as normas ABNT.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 10,
+    image:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80",
+    title: "Aulas particulares de Cálculo I e II",
+    author: "Gustavo Martins | 8 Período Eng. Mecânica",
+    price: "R$ 50,00/hora",
+    category: "Serviços",
+    description: "Aulas individuais de Cálculo com didática simplificada.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 11,
+    image:
+      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=80",
+    title: "Monitoria de programação em Python",
+    author: "João Paulo | 5 Período Eng. Software",
+    price: "R$ 45,00/hora",
+    category: "Serviços",
+    description: "Monitoria focada em Python para iniciantes e intermediários.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 12,
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    title: "Revisão ortográfica e gramatical de trabalhos",
+    author: "Pedro Rocha | 5 Período Letras",
+    price: "R$ 20,00",
+    category: "Serviços",
+    description: "Revisão completa de textos acadêmicos e trabalhos.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 13,
+    image:
+      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&q=80",
+    title: "Criação de currículo profissional LinkedIn",
+    author: "Ana Clara Souza | 6 Período Administração",
+    price: "R$ 30,00",
+    category: "Serviços",
+    description: "Criação e otimização de currículo e perfil no LinkedIn.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 14,
+    image:
+      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=80",
+    title: "Design de Posts para Atléticas e Centros Acadêmicos",
+    author: "Júlia Mendes | 5 Período Design Gráfico",
+    price: "R$ 18,00/post",
+    category: "Serviços",
+    description:
+      "Criação de artes para redes sociais de entidades universitárias.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 15,
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80",
+    title: "Desenvolvimento de Landing Pages para Projetos Universitários",
+    author: "Júlio Rodrigo | 5 Período Eng. Software",
+    price: "R$ 120,00",
+    category: "Serviços",
+    description: "Desenvolvimento de landing pages modernas e responsivas.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 16,
+    image:
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80",
+    title: "Desenho técnico para trabalhos acadêmicos",
+    author: "Mariana Nunes | 6 Período Arquitetura e Urbanismo",
+    price: "R$ 25,00",
+    category: "Serviços",
+    description:
+      "Desenhos técnicos e plantas baixas para trabalhos acadêmicos.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 17,
+    image:
+      "https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?w=400&q=80",
+    title: "Modelagem 3D e Renderização para Projetos Acadêmicos",
+    author: "Camilla Torres | 6 Período Arquitetura e Urbanismo",
+    price: "R$ 80,00",
+    category: "Serviços",
+    description: "Modelagem e renderização 3D para projetos de arquitetura.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 18,
+    image:
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80",
+    title: "Tradução de artigos científicos Inglês/Português",
+    author: "Letícia Campos | 7 Período Letras",
+    price: "R$ 40,00",
+    category: "Serviços",
+    description:
+      "Tradução técnica de artigos científicos com precisão acadêmica.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 19,
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=80",
+    title: "Conserto de celulares e tablets",
+    author: "Rafael Lima | 4 Período Eng. Elétrica",
+    price: "R$ 60,00",
+    category: "Usados",
+    description: "Reparo de telas, baterias e componentes eletrônicos.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 20,
+    image:
+      "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=400&q=80",
+    title: "Aulas de violão para iniciantes",
+    author: "Felipe Souza | 3 Período Música",
+    price: "R$ 35,00/hora",
+    category: "Aulas",
+    description: "Aulas de violão do básico ao intermediário.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 21,
+    image:
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+    title: "Personal trainer universitário",
+    author: "Thiago Barros | 6 Período Educação Física",
+    price: "R$ 55,00/hora",
+    category: "Aulas",
+    description: "Treinos personalizados com acompanhamento presencial.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 22,
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80",
+    title: "Criação de sites institucionais para pequenos negócios",
+    author: "Amanda Ferreira | 7 Período Eng. Software",
+    price: "R$ 250,00",
+    category: "Serviços",
+    description:
+      "Desenvolvimento de sites institucionais responsivos e modernos.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 23,
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80",
+    title: "Consultoria financeira pessoal",
+    author: "Isabela Costa | 8 Período Ciências Contábeis",
+    price: "R$ 45,00/hora",
+    category: "Serviços",
+    description:
+      "Planejamento financeiro e controle de gastos para universitários.",
+    featured: false,
+    related: false,
+  },
+  {
+    id: 24,
+    image:
+      "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=400&q=80",
+    title: "Fotografia de eventos universitários",
+    author: "Carlos Mendes | 5 Período Jornalismo",
+    price: "R$ 150,00/evento",
+    category: "Serviços",
+    description: "Cobertura fotográfica profissional de eventos acadêmicos.",
+    featured: false,
+    related: false,
   },
 ];
 

@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #07091a;
+  --color-surface: #0d1230;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c5cbf;
+  --color-accent-h: #6a4aad;
+  --color-text: #e8eaf6;
+  --color-muted: rgba(255, 255, 255, 0.55);
+  --grad: linear-gradient(135deg, #4ecfef, #9b59d4, #e8468a);
+}
+
 body {
   font-family:
     system-ui,
@@ -17,35 +28,50 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  background: #f4f4f8;
+  background: var(--color-bg);
   overflow-x: hidden;
 }
 
+/* ── Hero ── */
 .HeroBackground {
   position: absolute;
-  height: 516px;
+  height: 546px;
   width: 100%;
   object-fit: cover;
+  object-position: center top;
+  filter: brightness(50%);
 }
 
 .HeroHeadlineWrapper {
   position: relative;
-  left: 136px;
-  top: 56px;
+  padding: 56px 136px 0; /* substitui left/top fixos */
 }
 
 .HeroHeadlineWrapper h1 {
   font-size: 56px;
   font-weight: 900;
-  color: white;
+  color: var(--color-text);
+  padding-bottom: 12px;
+}
+
+.HeroHeadlineWrapper span {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 12px rgba(124, 92, 191, 0.28),
+    0 0 32px rgba(83, 53, 143, 0.22);
 }
 
 .HeroHeadlineWrapper p {
-  color: white;
+  color: var(--color-text);
   font-size: 16px;
   font-weight: 500;
 }
 
+/* ── Slider controls ── */
 .SliderPassWrapper {
   padding: 0 32px;
   display: flex;
@@ -92,12 +118,14 @@ body {
   border-color: white;
 }
 
+/* ── Cards ── */
 .HeroCardWrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 64px;
+  flex-wrap: wrap; /* evita overflow em telas médias */
 }
 
 .CategoryCardWrapper {
@@ -111,4 +139,91 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* ════════════════════════════
+   BREAKPOINTS
+   ════════════════════════════ */
+
+/* Tablet largo */
+@media (max-width: 1024px) {
+  .HeroHeadlineWrapper {
+    padding: 48px 64px 0;
+  }
+
+  .HeroHeadlineWrapper h1 {
+    font-size: 44px;
+  }
+
+  .HeroCardWrapper {
+    gap: 32px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .HeroBackground {
+    height: 420px;
+  }
+
+  .HeroHeadlineWrapper {
+    padding: 40px 32px 0;
+    text-align: center;
+  }
+
+  .HeroHeadlineWrapper h1 {
+    font-size: 36px;
+  }
+
+  .HeroHeadlineWrapper p {
+    font-size: 15px;
+  }
+
+  .SliderPassWrapper {
+    padding: 0 16px;
+  }
+
+  .SliderPass {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  .HeroCardWrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .HeroBackground {
+    height: 360px;
+  }
+
+  .HeroHeadlineWrapper {
+    padding: 32px 20px 0;
+  }
+
+  .HeroHeadlineWrapper h1 {
+    font-size: 28px;
+  }
+
+  .HeroHeadlineWrapper p {
+    font-size: 14px;
+  }
+
+  .SliderPass {
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  .SliderIndex {
+    width: 14px;
+    height: 14px;
+  }
+
+  .SlideIndexWrapper {
+    gap: 8px;
+    top: 60px;
+  }
 }
