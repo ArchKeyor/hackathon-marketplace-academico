@@ -95,7 +95,6 @@ Antes de começar, certifique-se de ter instalado:
 
 - Node.js
 - Python
-- PostgreSQL
 - Git
 
 Primeiro, clone o repositório:
