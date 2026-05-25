@@ -13,6 +13,7 @@ export default function ProductCard({
   const navigate = useNavigate();
 
   return (
+    // Componente CardProduct que é consumido ( Card interno que é passado dentro do FeaturedCards ) pelo FeaturedCard e, com o uso do react router, levará para a página de produtos conforme o produto clicado
     <div className="ProductCard" onClick={() => navigate(`/produto/${id}`)}>
       <img src={image} alt={title} className="ProductImage" />
 

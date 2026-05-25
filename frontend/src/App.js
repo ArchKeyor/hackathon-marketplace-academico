@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
+    // Gerenciador de rotas usando a biblioteca reac router
     <BrowserRouter>
       <ScrollToTop />
       <Routes>

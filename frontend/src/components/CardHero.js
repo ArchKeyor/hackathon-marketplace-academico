@@ -8,6 +8,7 @@ export default function CardHero({
   onClick,
 }) {
   return (
+    // Componente card da hero ajustável no import usando props
     <div className="info-card">
       <h2 className="info-card-title">{title}</h2>
       <img src={image} alt={title} className="info-card-image" />

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="Footer">
       <div className="FooterContent">
-        {/* LEFT SIDE */}
+        {/*  Lado esquerdo */}
         <div className="FooterBrand">
           <img src="/img/Logo.png" alt="UGB Market" className="FooterLogo" />
 
@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* LINKS */}
+        {/* Links */}
         <div className="FooterLinks">
           <div className="FooterColumn">
             <h3>Contato</h3>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* BOTTOM */}
+      {/* Final - footer */}
       <div className="FooterBottom">
         <p>© 2026 | UGB Market - Todos os direitos reservados</p>
       </div>

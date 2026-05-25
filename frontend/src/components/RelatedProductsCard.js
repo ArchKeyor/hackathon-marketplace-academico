@@ -13,6 +13,7 @@ export default function RelatedProductsCard({
   const navigate = useNavigate();
 
   return (
+    // Componente que mapeia um json (../data/products) e aloca as informações dele nos cards
     <div className="ProductCard" onClick={() => navigate(`/produto/${id}`)}>
       <img src={image} alt={title} className="ProductImage" />
 

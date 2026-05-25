@@ -3,6 +3,7 @@ import "../styles/FeaturedProducts.css";
 import products from "../data/products";
 
 export default function FeaturedProducts() {
+  // Componente que mapeia um json (../data/products) e aloca as informações dele nos cards
   const featuredProducts = products.filter((product) => product.featured);
 
   return (
